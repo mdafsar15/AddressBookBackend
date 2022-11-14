@@ -18,15 +18,12 @@ public class AddressBookDTO {
     private String name;
 
     @NotEmpty(message = "Address cannot be null")
-    @Pattern(regexp = "^[A-Z][a-zA-Z0-9\\s]+$", message = "Invalid Address")
     private String address;
 
     @NotEmpty(message = "City cannot be null")
-    @Pattern(regexp = "^[A-Z][a-zA-Z\\s]+$", message = "Invalid City")
     private String city;
 
     @NotEmpty(message = "State cannot be null")
-    @Pattern(regexp = "^[A-Z][a-zA-Z\\s]+$", message = "Invalid State")
     private String state;
 
     @NotEmpty(message = "Phone cannot be null")
@@ -34,6 +31,5 @@ public class AddressBookDTO {
     private String phone;
 
     @NotEmpty(message = "Zip cannot be null")
-    @Pattern(regexp = "^[0-9]{6}$", message = "Invalid Zip")
     private String zip;
 }
